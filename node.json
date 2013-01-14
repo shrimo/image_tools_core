@@ -1,0 +1,44 @@
+{
+    "node1":{
+	"node_name" : "blur_01",
+	"node_type" : "blur",
+	"file_in" : "test.jpg",
+	"file_out": "out.jpg",
+	"size" : 30,
+	"id": 1
+	},
+    "node2":{
+	"node_name" : "bright_01",
+	"node_type" : "bright",
+	"file_in" : "out.jpg",
+	"file_out": "out2.jpg",
+	"size" : 0.5,
+	"id": 2
+	},
+    "node3":{
+	"node_name" : "size_01",
+	"node_type" : "size",
+	"file_in" : "out2.jpg",
+	"file_out": "out3.jpg",
+	"size" : 1.2,
+	"id": 3
+	},
+    "node4":{
+	"node_name" : "Noise_01",
+	"node_type" : "noise",
+	"file_in" : "out3.jpg",
+	"file_out": "out4.jpg",
+	"size" : 3,
+	"id": 4
+	},
+    "node5":{
+	"node_name" : "composite_01",
+	"node_type" : "composite",
+	"file_a" : "out3.jpg",
+	"file_b": "out4.jpg",
+	"file_out": "out5.jpg",
+	"mask" : 180,
+	"id": 5
+	}
+
+}
